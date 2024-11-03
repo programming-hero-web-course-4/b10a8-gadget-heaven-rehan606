@@ -2,7 +2,7 @@
     {
         "id": 1,
         "title": "Laptop X1 Pro",
-        "image": "https://example.com/images/laptop-x1-pro.jpg",
+        "image": "https://www.91-cdn.com/hub/wp-content/uploads/2022/07/Top-laptop-brands-in-India-1200x675.jpg",
         "category": "Laptop",
         "price": 1399.99,
         "description": "High-performance laptop with robust design and fast processing.",
@@ -19,7 +19,7 @@
     {
         "id": 2,
         "title": "Smartphone A20",
-        "image": "https://example.com/images/smartphone-a20.jpg",
+        "image": "https://t3.ftcdn.net/jpg/09/37/87/86/360_F_937878692_v7L7LvjH3S7WjzQEFHv0NWLTCJJDBTtd.jpg",
         "category": "Phone",
         "price": 599.99,
         "description": "Affordable smartphone with a great camera and solid battery life.",
@@ -36,7 +36,7 @@
     {
         "id": 3,
         "title": "Wireless Earbuds Pro",
-        "image": "https://example.com/images/earbuds-pro.jpg",
+        "image": "https://diamu.com.bd/wp-content/uploads/2022/12/SoundPeats-Air3-Deluxe-HS-True-Wireless-Earbuds-2.jpg",
         "category": "Accessories",
         "price": 149.99,
         "description": "Noise-canceling wireless earbuds with rich sound quality.",
@@ -53,7 +53,7 @@
     {
         "id": 4,
         "title": "Smart Watch Series 6",
-        "image": "https://example.com/images/smartwatch-series6.jpg",
+        "image": "https://rukminim2.flixcart.com/image/850/1000/xif0q/smartwatch/n/p/5/46-nfw700224-android-ios-nervfit-no-original-imahyhphwt2h3c9f.jpeg?q=20&crop=false",
         "category": "Smart Watch",
         "price": 399.99,
         "description": "Smartwatch with health tracking and enhanced battery life.",
@@ -70,7 +70,7 @@
     {
         "id": 5,
         "title": "MacBook Air M2",
-        "image": "https://example.com/images/macbook-air-m2.jpg",
+        "image": "https://fs.npstatic.com/userfiles/7695213/image/macbook-air-m3/MacBook-Air-nextpit-Test-2.jpg",
         "category": "MacBook",
         "price": 999.99,
         "description": "Lightweight laptop with Apple's M2 chip, perfect for everyday tasks.",
@@ -87,7 +87,7 @@
     {
         "id": 6,
         "title": "iPhone 13 Pro",
-        "image": "https://example.com/images/iphone-13-pro.jpg",
+        "image": "https://www.digitaltrends.com/wp-content/uploads/2021/09/iphone-13-pro-review-dan-baker-35.jpg?p=1",
         "category": "iPhone",
         "price": 1099.99,
         "description": "Apple's latest smartphone with top-notch performance and camera quality.",
@@ -104,7 +104,7 @@
     {
         "id": 7,
         "title": "Laptop UltraBook",
-        "image": "https://example.com/images/ultrabook.jpg",
+        "image": "https://static.ffx.io/images/$zoom_0.53%2C$multiply_0.5855%2C$ratio_1.776846%2C$width_1059%2C$x_0%2C$y_0/t_crop_custom/q_86%2Ce_sharpen:60%2Cf_auto/4fb086a57dda6add5110655562bad05a179a8d32",
         "category": "Laptop",
         "price": 1299.99,
         "description": "Slim and portable laptop with excellent battery life and power.",
@@ -121,7 +121,7 @@
     {
         "id": 8,
         "title": "Smartphone XZ Max",
-        "image": "https://example.com/images/smartphone-xz-max.jpg",
+        "image": "https://img.freepik.com/premium-psd/phone-mockup_68185-402.jpg",
         "category": "Phone",
         "price": 699.99,
         "description": "Advanced smartphone with a sleek design and powerful camera.",
@@ -138,7 +138,7 @@
     {
         "id": 9,
         "title": "Wireless Charger Dock",
-        "image": "https://example.com/images/charger-dock.jpg",
+        "image": "https://i.ebayimg.com/images/g/02kAAOSwJXBmCJhz/s-l1200.jpg",
         "category": "Accessories",
         "price": 59.99,
         "description": "Wireless charger dock for fast and convenient charging.",
@@ -155,7 +155,7 @@
     {
         "id": 10,
         "title": "Smart Watch GT",
-        "image": "https://example.com/images/smartwatch-gt.jpg",
+        "image": "https://img.freepik.com/premium-photo/smart-watch-with-green-light-face_1309173-77715.jpg",
         "category": "Smart Watch",
         "price": 329.99,
         "description": "Premium smartwatch with extensive fitness and health tracking features.",
@@ -172,7 +172,7 @@
     {
         "id": 11,
         "title": "MacBook Pro M1",
-        "image": "https://example.com/images/macbook-pro-m1.jpg",
+        "image": "https://i.ytimg.com/vi/XU1X7Sd-5kU/maxresdefault.jpg",
         "category": "MacBook",
         "price": 1499.99,
         "description": "Powerful MacBook with Apple's M1 chip for professionals.",
@@ -189,7 +189,7 @@
     {
         "id": 12,
         "title": "iPhone 12 Mini",
-        "image": "https://example.com/images/iphone-12-mini.jpg",
+        "image": "https://images.macrumors.com/article-new/2023/09/iPhone-15-General-Feature-Black.jpg",
         "category": "iPhone",
         "price": 699.99,
         "description": "Compact iPhone with powerful features and an edge-to-edge display.",

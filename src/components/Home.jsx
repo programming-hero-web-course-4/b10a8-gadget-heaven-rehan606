@@ -11,7 +11,7 @@ const Home = () => {
         <div>
             <Banner></Banner>
             <Heading></Heading>
-            <div style={{ display: 'flex', gap: '5px' }}>
+            <div className="flex gap-4 pb-28" >
                 <div style={{ flex: '1' }}>
                     <Categories categories={categories}></Categories>
                 </div>
