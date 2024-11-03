@@ -1,0 +1,206 @@
+[
+    {
+        "id": 1,
+        "title": "Laptop X1 Pro",
+        "image": "https://example.com/images/laptop-x1-pro.jpg",
+        "category": "Laptop",
+        "price": 1399.99,
+        "description": "High-performance laptop with robust design and fast processing.",
+        "Specification": [
+            "16-inch Display",
+            "1TB SSD",
+            "16GB RAM",
+            "Intel Core i9 Processor",
+            "NVIDIA RTX 3060"
+        ],
+        "availability": true,
+        "rating": 4.8
+    },
+    {
+        "id": 2,
+        "title": "Smartphone A20",
+        "image": "https://example.com/images/smartphone-a20.jpg",
+        "category": "Phone",
+        "price": 599.99,
+        "description": "Affordable smartphone with a great camera and solid battery life.",
+        "Specification": [
+            "6.1-inch LCD Display",
+            "128GB Storage",
+            "Dual Rear Cameras",
+            "4000mAh Battery",
+            "4G LTE"
+        ],
+        "availability": true,
+        "rating": 4.3
+    },
+    {
+        "id": 3,
+        "title": "Wireless Earbuds Pro",
+        "image": "https://example.com/images/earbuds-pro.jpg",
+        "category": "Accessories",
+        "price": 149.99,
+        "description": "Noise-canceling wireless earbuds with rich sound quality.",
+        "Specification": [
+            "Bluetooth 5.1",
+            "Active Noise Cancellation",
+            "30-Hour Battery Life",
+            "Water-Resistant",
+            "Touch Controls"
+        ],
+        "availability": false,
+        "rating": 4.6
+    },
+    {
+        "id": 4,
+        "title": "Smart Watch Series 6",
+        "image": "https://example.com/images/smartwatch-series6.jpg",
+        "category": "Smart Watch",
+        "price": 399.99,
+        "description": "Smartwatch with health tracking and enhanced battery life.",
+        "Specification": [
+            "1.6-inch Retina Display",
+            "Heart Rate Monitor",
+            "GPS Tracking",
+            "18-Hour Battery",
+            "Water-Resistant"
+        ],
+        "availability": true,
+        "rating": 4.7
+    },
+    {
+        "id": 5,
+        "title": "MacBook Air M2",
+        "image": "https://example.com/images/macbook-air-m2.jpg",
+        "category": "MacBook",
+        "price": 999.99,
+        "description": "Lightweight laptop with Apple's M2 chip, perfect for everyday tasks.",
+        "Specification": [
+            "13.3-inch Retina Display",
+            "256GB SSD",
+            "8GB RAM",
+            "Apple M2 Chip",
+            "Backlit Keyboard"
+        ],
+        "availability": true,
+        "rating": 4.9
+    },
+    {
+        "id": 6,
+        "title": "iPhone 13 Pro",
+        "image": "https://example.com/images/iphone-13-pro.jpg",
+        "category": "iPhone",
+        "price": 1099.99,
+        "description": "Apple's latest smartphone with top-notch performance and camera quality.",
+        "Specification": [
+            "6.1-inch Super Retina XDR Display",
+            "256GB Storage",
+            "Triple Rear Cameras",
+            "5G Connectivity",
+            "Ceramic Shield"
+        ],
+        "availability": true,
+        "rating": 4.8
+    },
+    {
+        "id": 7,
+        "title": "Laptop UltraBook",
+        "image": "https://example.com/images/ultrabook.jpg",
+        "category": "Laptop",
+        "price": 1299.99,
+        "description": "Slim and portable laptop with excellent battery life and power.",
+        "Specification": [
+            "14-inch HD Display",
+            "512GB SSD",
+            "8GB RAM",
+            "Intel Core i5 Processor",
+            "Lightweight Design"
+        ],
+        "availability": false,
+        "rating": 4.5
+    },
+    {
+        "id": 8,
+        "title": "Smartphone XZ Max",
+        "image": "https://example.com/images/smartphone-xz-max.jpg",
+        "category": "Phone",
+        "price": 699.99,
+        "description": "Advanced smartphone with a sleek design and powerful camera.",
+        "Specification": [
+            "6.7-inch AMOLED Display",
+            "256GB Storage",
+            "Quad Rear Cameras",
+            "4500mAh Battery",
+            "5G Connectivity"
+        ],
+        "availability": true,
+        "rating": 4.4
+    },
+    {
+        "id": 9,
+        "title": "Wireless Charger Dock",
+        "image": "https://example.com/images/charger-dock.jpg",
+        "category": "Accessories",
+        "price": 59.99,
+        "description": "Wireless charger dock for fast and convenient charging.",
+        "Specification": [
+            "Fast Charging",
+            "Supports Multiple Devices",
+            "LED Indicator",
+            "Compact Design",
+            "Universal Compatibility"
+        ],
+        "availability": true,
+        "rating": 4.6
+    },
+    {
+        "id": 10,
+        "title": "Smart Watch GT",
+        "image": "https://example.com/images/smartwatch-gt.jpg",
+        "category": "Smart Watch",
+        "price": 329.99,
+        "description": "Premium smartwatch with extensive fitness and health tracking features.",
+        "Specification": [
+            "1.8-inch AMOLED Display",
+            "Heart Rate & Sleep Monitor",
+            "GPS & Altimeter",
+            "2-Day Battery Life",
+            "Water-Resistant"
+        ],
+        "availability": false,
+        "rating": 4.5
+    },
+    {
+        "id": 11,
+        "title": "MacBook Pro M1",
+        "image": "https://example.com/images/macbook-pro-m1.jpg",
+        "category": "MacBook",
+        "price": 1499.99,
+        "description": "Powerful MacBook with Apple's M1 chip for professionals.",
+        "Specification": [
+            "13-inch Retina Display",
+            "512GB SSD",
+            "16GB RAM",
+            "Apple M1 Chip",
+            "Touch Bar & Touch ID"
+        ],
+        "availability": true,
+        "rating": 4.9
+    },
+    {
+        "id": 12,
+        "title": "iPhone 12 Mini",
+        "image": "https://example.com/images/iphone-12-mini.jpg",
+        "category": "iPhone",
+        "price": 699.99,
+        "description": "Compact iPhone with powerful features and an edge-to-edge display.",
+        "Specification": [
+            "5.4-inch Super Retina XDR Display",
+            "64GB Storage",
+            "Dual Rear Cameras",
+            "5G Connectivity",
+            "Water-Resistant"
+        ],
+        "availability": true,
+        "rating": 4.6
+    }
+]

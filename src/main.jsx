@@ -5,11 +5,28 @@ import App from './App.jsx'
 
 import {createBrowserRouter,RouterProvider,} from "react-router-dom";
 import Root from './components/Root.jsx';
+import Home from './components/Home.jsx';
+import GadgetCards from './components/GadgetCards.jsx';
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Root></Root>
+    element: <Root></Root>,
+
+    children:[
+      {
+        path: '/',
+        element: <Home></Home>,
+        loader: ()=> fetch('../category.json'),
+
+        children:[
+          {
+            path: '/category/:category',
+            element: <GadgetCards></GadgetCards>
+          }
+        ]
+      }
+    ]
   },
 ]);
 
