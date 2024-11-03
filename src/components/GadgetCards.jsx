@@ -9,8 +9,12 @@ const GadgetCards = () => {
     const [gadget, setGadget] = useState([])
 
     useEffect(()=> {
-        const filterByCategory = [...data].filter(gadget => gadget.category === category)
-        setGadget(filterByCategory)
+        if(category){
+            const filterByCategory = [...data].filter(gadget => gadget.category === category)
+            setGadget(filterByCategory)
+        }else{
+            setGadget(data)
+        }
     }, [category, data])
     
     return (
