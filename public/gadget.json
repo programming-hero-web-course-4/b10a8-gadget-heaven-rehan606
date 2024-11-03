@@ -69,20 +69,20 @@
     },
     {
         "id": 5,
-        "title": "MacBook Air M2",
-        "image": "https://fs.npstatic.com/userfiles/7695213/image/macbook-air-m3/MacBook-Air-nextpit-Test-2.jpg",
-        "category": "MacBook",
-        "price": 999.99,
-        "description": "Lightweight laptop with Apple's M2 chip, perfect for everyday tasks.",
+        "title": " Headphone",
+        "image": "https://img.freepik.com/free-photo/shiny-black-headphones-reflect-golden-nightclub-lights-generated-by-ai_188544-10148.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1727913600&semt=ais_hybrid",
+        "category": "Accessories",
+        "price": 5000.99,
+        "description": "Wireless charger dock for fast and convenient charging.",
         "Specification": [
-            "13.3-inch Retina Display",
-            "256GB SSD",
-            "8GB RAM",
-            "Apple M2 Chip",
-            "Backlit Keyboard"
+            "Fast Charging",
+            "Supports Multiple Devices",
+            "LED Indicator",
+            "Compact Design",
+            "Universal Compatibility"
         ],
         "availability": true,
-        "rating": 4.9
+        "rating": 4.7
     },
     {
         "id": 6,
@@ -290,20 +290,20 @@
     },
     {
         "id": 18,
-        "title": " Headphone",
-        "image": "https://img.freepik.com/free-photo/shiny-black-headphones-reflect-golden-nightclub-lights-generated-by-ai_188544-10148.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1727913600&semt=ais_hybrid",
-        "category": "Accessories",
-        "price": 5000.99,
-        "description": "Wireless charger dock for fast and convenient charging.",
+        "title": "MacBook Air M2",
+        "image": "https://fs.npstatic.com/userfiles/7695213/image/macbook-air-m3/MacBook-Air-nextpit-Test-2.jpg",
+        "category": "MacBook",
+        "price": 999.99,
+        "description": "Lightweight laptop with Apple's M2 chip, perfect for everyday tasks.",
         "Specification": [
-            "Fast Charging",
-            "Supports Multiple Devices",
-            "LED Indicator",
-            "Compact Design",
-            "Universal Compatibility"
+            "13.3-inch Retina Display",
+            "256GB SSD",
+            "8GB RAM",
+            "Apple M2 Chip",
+            "Backlit Keyboard"
         ],
         "availability": true,
-        "rating": 4.7
+        "rating": 4.9
     },
     {
         "id": 19,

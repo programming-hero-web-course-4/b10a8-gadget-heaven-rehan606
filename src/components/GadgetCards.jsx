@@ -13,7 +13,7 @@ const GadgetCards = () => {
             const filterByCategory = [...data].filter(gadget => gadget.category === category)
             setGadget(filterByCategory)
         }else{
-            setGadget(data)
+            setGadget(data.slice(0,6))
         }
     }, [category, data])
     
