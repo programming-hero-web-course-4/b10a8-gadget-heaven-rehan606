@@ -60,8 +60,15 @@ const Navbar = () => {
                 </div>
                 <div className="navbar-end">
 
-                    <button className=" "><i className="fa-solid fa-cart-shopping border border-[#9538E2] bg-white rounded-full p-4 text-black"></i></button>
-                    <button className="ml-4"><i className="fa-regular fa-heart border border-[#9538E2] bg-white rounded-full p-4 text-black"></i></button>
+                    <button className=" flex">
+                        <i className="fa-solid fa-cart-shopping border border-[#9538E2] bg-white rounded-full p-4 text-black"></i> 
+                        <span className="text-white font-semibold bg-black w-6 h-6 rounded-full -ml-4">4</span>
+                    </button>
+
+                    <button className="ml-4 flex">
+                        <i className="fa-regular fa-heart border border-[#9538E2] bg-white rounded-full p-4 text-black"></i>
+                        <span className="text-white font-semibold bg-black w-6 h-6 rounded-full -ml-4">2</span>
+                    </button>
                 </div>
             </div>
         </div>

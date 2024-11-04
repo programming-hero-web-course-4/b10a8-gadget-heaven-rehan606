@@ -7,12 +7,13 @@ import CartItem from "./CartItem";
 
 const Dashboard = () => {
     
-
     const [gadget, setGadget] = useState([])
-    useEffect(()=> {
+    const [totalCost, setTotalCost] = useState(0);
 
+    useEffect(()=> {
         const cartData = getAddedToCart()
         setGadget(cartData)
+        updateTotalCost(cartData);
 
     },[])
 
@@ -20,7 +21,14 @@ const Dashboard = () => {
         removeItem(id)
         const cartData = getAddedToCart()
         setGadget(cartData)
+        updateTotalCost(cartData);
     }
+
+    // Calculate and update the total cost
+    const updateTotalCost = (gadgetList) => {
+        const total = gadgetList.reduce((sum, item) => sum + item.price, 0);
+        setTotalCost(total);
+    };
 
     // Sort items by price
     const sortByPrice = () => {
@@ -51,7 +59,7 @@ const Dashboard = () => {
                     </div>
 
                     <div className="flex items-center gap-3">
-                        <h2 className="font-semibold">Total Cost : 0 </h2>
+                        <h2 className="font-semibold">Total Cost : {totalCost} </h2>
                         <button onClick={sortByPrice} className="px-5 py-2 rounded-full border textColor font-semibold border-[#9538E2]">Sort by Price <i className="fa-solid fa-arrow-up-a-z"></i> </button>
 
                         <button className="px-5 py-2 rounded-full border font-semibold text-white bg-[#9538E2]">Purchase</button>

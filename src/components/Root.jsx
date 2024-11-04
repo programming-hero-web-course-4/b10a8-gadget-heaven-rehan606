@@ -7,13 +7,14 @@ import Footer from "./Footer";
 
 const Root = () => {
     
+    
 
     return (
         <div>
             <Toaster></Toaster>
             <Navbar></Navbar>
             <div className="min-h-[calc(100vh-232px)] ">
-                <Outlet></Outlet>
+                <Outlet ></Outlet>
             </div>
             <Footer></Footer>
         </div>
