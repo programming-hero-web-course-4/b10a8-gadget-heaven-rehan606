@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link, useLoaderData, useParams } from "react-router-dom";
+import { addToStoredCartList } from "../utility/addToLS";
 
 
 const GadgetDetails = () => {
@@ -14,6 +15,11 @@ const GadgetDetails = () => {
     }, [data, id])
 
     const { title, image, price, description, Specification, availability, rating } = gadget || {}
+
+    const handleAddToCart = (id) =>{
+        addToStoredCartList(id)
+    }
+
     return (
         <div className="" >
             <div className=" bg-[#9538E2] pb-52 text-center pt-10">
@@ -56,7 +62,7 @@ const GadgetDetails = () => {
                         </div>
 
                         <div className="mt-5 mb-4">
-                            <Link to={`/gadget/${id}`} className="px-6 py-3  rounded-full text-white font-semibold bg-[#9538E2]"> Add to Cart <i className="fa-solid fa-cart-shopping"></i> </Link>
+                            <Link onClick={()=> handleAddToCart(id)}  className="px-6 py-3  rounded-full text-white font-semibold bg-[#9538E2]"> Add to Cart <i className="fa-solid fa-cart-shopping"></i> </Link>
 
                             <Link to={`/gadget/${id}`} className=" w-10 h-10 p-3 ml-4  rounded-full text-white font-semibold border border-[#9538E2]">  <i className="fa-regular fa-heart text-xl leading-tight textColor"></i> </Link>
 
