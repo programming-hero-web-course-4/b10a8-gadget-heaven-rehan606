@@ -10,6 +10,7 @@ import GadgetCards from './components/GadgetCards.jsx';
 import GadgetDetails from './components/GadgetDetails.jsx';
 import CartList from './components/CartList.jsx';
 import Contact from './components/Contact.jsx';
+import Dashboard from './components/Dashboard.jsx';
 
 const router = createBrowserRouter([
   {
@@ -40,10 +41,16 @@ const router = createBrowserRouter([
         element: <GadgetDetails></GadgetDetails>,
         loader: ()=> fetch('../gadget.json'),
       },
+      
       {
-        path: '/cartList',
-        element: <CartList></CartList>
+        path: '/dashboard',
+        element: <Dashboard></Dashboard>
       },
+      // {
+      //   path: '/cartList',
+      //   element: <CartList></CartList>,
+      //   loader: ()=> fetch('../gadget.json'),
+      // },
       {
         path: '/contact',
         element: <Contact></Contact>

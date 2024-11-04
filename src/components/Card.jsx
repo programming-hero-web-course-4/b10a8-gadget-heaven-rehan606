@@ -2,7 +2,7 @@
 import { Link,  } from "react-router-dom";
 
 
-const Card = ({ gadget }) => {
+const Card = ({ gadget, cart }) => {
     const { id, title, image,  price } = gadget || {}
     return (
         <div>
