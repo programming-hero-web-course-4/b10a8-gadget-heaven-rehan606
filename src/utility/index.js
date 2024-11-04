@@ -23,4 +23,11 @@ const addCart = gadget => {
     toast.success('Item Added Successfully!');
 }
 
-export {addCart , getAddedToCart}
+const removeItem = id => {
+    const addToCart = getAddedToCart()
+    const remaining = addToCart.filter(gadget => gadget.id != id)
+    localStorage.setItem('addToCart', JSON.stringify(remaining) )
+    toast.success('Successfully! Remove Item  ');
+}
+
+export {addCart , getAddedToCart, removeItem}

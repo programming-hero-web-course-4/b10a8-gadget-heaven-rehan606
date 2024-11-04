@@ -1,5 +1,6 @@
+/* eslint-disable no-undef */
 import { useEffect, useState } from "react";
-import { getAddedToCart } from "../utility";
+import { getAddedToCart, removeItem } from "../utility";
 import Card from "./Card";
 import CartItem from "./CartItem";
 
@@ -14,6 +15,18 @@ const Dashboard = () => {
         setGadget(cartData)
 
     },[])
+
+    const handleRemove = id =>{
+        removeItem(id)
+        const cartData = getAddedToCart()
+        setGadget(cartData)
+    }
+
+    // Sort items by price
+    const sortByPrice = () => {
+        const sortedGadgets = [...gadget].sort((a, b) => b.price - a.price );
+        setGadget(sortedGadgets);
+    };
 
     return (
         <div>
@@ -39,7 +52,7 @@ const Dashboard = () => {
 
                     <div className="flex items-center gap-3">
                         <h2 className="font-semibold">Total Cost : 0 </h2>
-                        <button className="px-5 py-2 rounded-full border textColor font-semibold border-[#9538E2]">Sort by Price <i className="fa-solid fa-arrow-up-a-z"></i> </button>
+                        <button onClick={sortByPrice} className="px-5 py-2 rounded-full border textColor font-semibold border-[#9538E2]">Sort by Price <i className="fa-solid fa-arrow-up-a-z"></i> </button>
 
                         <button className="px-5 py-2 rounded-full border font-semibold text-white bg-[#9538E2]">Purchase</button>
                     </div>
@@ -50,7 +63,7 @@ const Dashboard = () => {
 
             <div className="container mx-auto gap-4">
                 {
-                    gadget.map(gadget => ( <CartItem key={gadget.id} gadget={gadget}></CartItem> ))
+                    gadget.map(gadget => ( <CartItem handleRemove={handleRemove} key={gadget.id} gadget={gadget}></CartItem> ))
                 }
             </div>
 
