@@ -67,7 +67,7 @@ const GadgetDetails = () => {
                         </div>
 
                         <div className="mt-5 mb-4">
-                            <Link  onClick={()=> handleAddToCart(gadget)} className="px-6 py-3  rounded-full text-white font-semibold bg-[#9538E2]"> Add to Cart <i className="fa-solid fa-cart-shopping"></i> </Link>
+                            <Link  onClick={()=> handleAddToCart(gadget)}  className="px-6 py-3  rounded-full text-white font-semibold bg-[#9538E2]"> Add to Cart <i className="fa-solid fa-cart-shopping"></i> </Link>
 
                             <Link to={`/gadget/${id}`} className=" w-10 h-10 p-3 ml-4  rounded-full text-white font-semibold border border-[#9538E2]">  <i className="fa-regular fa-heart text-xl leading-tight textColor"></i> </Link>
 

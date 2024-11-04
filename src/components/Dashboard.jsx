@@ -1,6 +1,19 @@
+import { useEffect, useState } from "react";
+import { getAddedToCart } from "../utility";
+import Card from "./Card";
+import CartItem from "./CartItem";
 
 
 const Dashboard = () => {
+
+    const [gadget, setGadget] = useState([])
+    useEffect(()=> {
+
+        const cartData = getAddedToCart()
+        setGadget(cartData)
+
+    },[])
+
     return (
         <div>
             <div className=" bg-[#9538E2] pb-10 text-center pt-10">
@@ -31,6 +44,13 @@ const Dashboard = () => {
                     </div>
                 </div>
 
+            </div>
+
+
+            <div className="container mx-auto gap-4">
+                {
+                    gadget.map(gadget => ( <CartItem key={gadget.id} gadget={gadget}></CartItem> ))
+                }
             </div>
         </div>
     );
