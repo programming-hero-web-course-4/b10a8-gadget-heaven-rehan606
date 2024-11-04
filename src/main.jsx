@@ -7,6 +7,7 @@ import {createBrowserRouter,RouterProvider,} from "react-router-dom";
 import Root from './components/Root.jsx';
 import Home from './components/Home.jsx';
 import GadgetCards from './components/GadgetCards.jsx';
+import GadgetDetails from './components/GadgetDetails.jsx';
 
 const router = createBrowserRouter([
   {
@@ -31,6 +32,11 @@ const router = createBrowserRouter([
             loader: ()=> fetch('../gadget.json'),
           }
         ]
+      },
+      {
+        path: '/gadget/:id',
+        element: <GadgetDetails></GadgetDetails>,
+        loader: ()=> fetch('../gadget.json'),
       }
     ]
   },
