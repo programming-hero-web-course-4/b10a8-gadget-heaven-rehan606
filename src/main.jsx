@@ -8,6 +8,8 @@ import Root from './components/Root.jsx';
 import Home from './components/Home.jsx';
 import GadgetCards from './components/GadgetCards.jsx';
 import GadgetDetails from './components/GadgetDetails.jsx';
+import CartList from './components/CartList.jsx';
+import Contact from './components/Contact.jsx';
 
 const router = createBrowserRouter([
   {
@@ -37,6 +39,14 @@ const router = createBrowserRouter([
         path: '/gadget/:id',
         element: <GadgetDetails></GadgetDetails>,
         loader: ()=> fetch('../gadget.json'),
+      },
+      {
+        path: '/cartList',
+        element: <CartList></CartList>
+      },
+      {
+        path: '/contact',
+        element: <Contact></Contact>
       }
     ]
   },
