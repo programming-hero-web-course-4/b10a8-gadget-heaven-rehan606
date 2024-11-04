@@ -5,6 +5,7 @@ import CartItem from "./CartItem";
 
 
 const Dashboard = () => {
+    
 
     const [gadget, setGadget] = useState([])
     useEffect(()=> {
@@ -37,7 +38,7 @@ const Dashboard = () => {
                     </div>
 
                     <div className="flex items-center gap-3">
-                        <h2 className="font-semibold">Total Cost : 00 </h2>
+                        <h2 className="font-semibold">Total Cost : 0 </h2>
                         <button className="px-5 py-2 rounded-full border textColor font-semibold border-[#9538E2]">Sort by Price <i className="fa-solid fa-arrow-up-a-z"></i> </button>
 
                         <button className="px-5 py-2 rounded-full border font-semibold text-white bg-[#9538E2]">Purchase</button>
@@ -52,6 +53,8 @@ const Dashboard = () => {
                     gadget.map(gadget => ( <CartItem key={gadget.id} gadget={gadget}></CartItem> ))
                 }
             </div>
+
+            
         </div>
     );
 };

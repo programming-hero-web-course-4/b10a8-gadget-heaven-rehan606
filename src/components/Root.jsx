@@ -6,6 +6,8 @@ import Footer from "./Footer";
 
 
 const Root = () => {
+    
+
     return (
         <div>
             <Toaster></Toaster>

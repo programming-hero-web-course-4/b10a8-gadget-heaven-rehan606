@@ -1,17 +1,29 @@
-import { NavLink } from "react-router-dom";
+/* eslint-disable no-unused-vars */
+import { NavLink, useLocation } from "react-router-dom";
 
 
 const Navbar = () => {
+    const location = useLocation()
+    
+    const sectionBackgroundClass =
+        location.pathname === "/dashboard" ? "bg-white pt-0" : "transfarent";
+
+    const textColorClass =
+        location.pathname === "/dashboard" ? "textColor font-bold" : "text-white";
+    
+
     const links = <>
-        <li><NavLink to="/">Home</NavLink></li>
-        <li><NavLink to="/statistic">Statistic</NavLink></li>
-        <li><NavLink to="/dashboard">Dashboard</NavLink></li>
-        <li><NavLink to="/about">About</NavLink></li>
+        <li><NavLink className={`${textColorClass}`} to="/">Home</NavLink></li>
+        <li><NavLink className={`${textColorClass}`} to="/statistic">Statistic</NavLink></li>
+        <li><NavLink className={`${textColorClass}`} to="/dashboard">Dashboard</NavLink></li>
+        <li><NavLink className={`${textColorClass}`} to="/about">About</NavLink></li>
 
     </>
-   
+
+    
+    
     return (
-        <div className="pt-10">
+        <div className={`pt-10 ${sectionBackgroundClass}` }>
             <div className="navbar  mx-auto w-11/12 text-white px-10 ">
                 <div className="navbar-start">
                     <div className="dropdown">
@@ -37,7 +49,7 @@ const Navbar = () => {
                             {links}
                         </ul>
                     </div>
-                    <NavLink to='/' className="text-lg md:text-xl cursor-pointer font-semibold">Gadget Heaven</NavLink>
+                    <NavLink to='/' className={`text-lg md:text-xl cursor-pointer font-semibold ${textColorClass}`}>Gadget Heaven</NavLink>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
@@ -48,8 +60,8 @@ const Navbar = () => {
                 </div>
                 <div className="navbar-end">
 
-                    <button className=" "><i className="fa-solid fa-cart-shopping bg-white rounded-full p-4 text-black"></i></button>
-                    <button className="ml-4"><i className="fa-regular fa-heart bg-white rounded-full p-4 text-black"></i></button>
+                    <button className=" "><i className="fa-solid fa-cart-shopping border border-[#9538E2] bg-white rounded-full p-4 text-black"></i></button>
+                    <button className="ml-4"><i className="fa-regular fa-heart border border-[#9538E2] bg-white rounded-full p-4 text-black"></i></button>
                 </div>
             </div>
         </div>
