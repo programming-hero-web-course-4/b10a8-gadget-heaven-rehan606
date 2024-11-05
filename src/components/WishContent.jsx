@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { getWishlist } from "../utility";
 import WishItem from "./WishItem";
+import { Helmet } from "react-helmet-async";
 
 
 const WishContent = () => {
@@ -30,6 +31,9 @@ const WishContent = () => {
 
     return (
         <div>
+            <Helmet>
+                <title>Wishlist | Gadget Heaven</title>
+            </Helmet>
             <div className="px-16">
                 <div className="container mx-auto flex justify-between items-center mt-5">
                     <div>

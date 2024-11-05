@@ -2,6 +2,7 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
+import ReactDOM from 'react-dom';
 
 import {createBrowserRouter,RouterProvider,} from "react-router-dom";
 import Root from './components/Root.jsx';
@@ -16,6 +17,7 @@ import Statistics from './components/Statistics.jsx';
 import TrackOrder from './components/TrackOrder.jsx';
 import WishContent from './components/WishContent.jsx';
 import ErrorPage from './components/ErrorPage.jsx';
+import { HelmetProvider } from 'react-helmet-async';
 
 const router = createBrowserRouter([
   {
@@ -73,10 +75,6 @@ const router = createBrowserRouter([
         path: '/track',
         element: <TrackOrder></TrackOrder>,
       },
-      // {
-      //   path: '/wishlist',
-      //   element: <WishContent></WishContent>,
-      // }
     ]
   },
 ]);
@@ -84,8 +82,19 @@ const router = createBrowserRouter([
 
 
 
-createRoot(document.getElementById('root')).render(
+// createRoot(document.getElementById('root')).render(
+//   <StrictMode>
+//     <RouterProvider router={router} />
+//   </StrictMode>,
+// )
+
+ReactDOM.createRoot(document.getElementById('root')).render(
+  
   <StrictMode>
-    <RouterProvider router={router} />
+    <HelmetProvider>
+      <RouterProvider router={router} />
+    </HelmetProvider>
   </StrictMode>,
 )
+
+

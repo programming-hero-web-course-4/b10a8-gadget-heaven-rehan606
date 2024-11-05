@@ -62,6 +62,7 @@ const CartContent = () => {
 
     return (
         <div>
+            
             <div className="px-16">
                 <div className="container mx-auto flex justify-between items-center mt-5">
                     <div>
