@@ -15,12 +15,13 @@ import CartContent from './components/CartContent.jsx';
 import Statistics from './components/Statistics.jsx';
 import TrackOrder from './components/TrackOrder.jsx';
 import WishContent from './components/WishContent.jsx';
+import ErrorPage from './components/ErrorPage.jsx';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root></Root>,
-
+    errorElement: <ErrorPage></ErrorPage>,
     children:[
       {
         path: '/',
