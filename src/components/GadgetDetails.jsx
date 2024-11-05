@@ -1,7 +1,7 @@
 /* eslint-disable react/jsx-no-duplicate-props */
 import { useEffect, useState } from "react";
 import { Link, useLoaderData, useParams } from "react-router-dom";
-import { addCart } from "../utility";
+import { addCart, addWishlist } from "../utility";
 
 // import {  addToStoredCartList } from "../utility/addToLS";
 
@@ -20,8 +20,14 @@ const GadgetDetails = () => {
 
     const { title, image, price, description, Specification, availability, rating } = gadget || {}
 
+    // Add To cart handler 
     const handleAddToCart = (gadget) => {
         addCart(gadget)
+    }
+
+    // Wishlist handler 
+    const handleWishlist = (gadget)=> {
+        addWishlist(gadget)
     }
     
 
@@ -72,7 +78,7 @@ const GadgetDetails = () => {
                         <div className="mt-5 mb-4">
                             <Link  onClick={()=> handleAddToCart(gadget)} className="px-6 py-3  rounded-full text-white font-semibold bg-[#9538E2]"> Add to Cart <i className="fa-solid fa-cart-shopping"></i> </Link>
 
-                            <Link to={`/gadget/${id}`} className=" w-10 h-10 p-3 ml-4  rounded-full text-white font-semibold border border-[#9538E2]">  <i className="fa-regular fa-heart text-xl leading-tight textColor"></i> </Link>
+                            <Link onClick={()=> handleWishlist(gadget)}  className=" w-10 h-10 p-3 ml-4  rounded-full text-white font-semibold border border-[#9538E2]">  <i className="fa-regular fa-heart text-xl leading-tight textColor"></i> </Link>
 
                         </div>
                     </div>

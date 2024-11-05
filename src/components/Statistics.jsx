@@ -12,7 +12,7 @@ const Statistics = () => {
             <div className="container mx-auto px-16" >
                 <h2 className="font-bold text-2xl textColor mt-5">Statistics</h2>
                 <div className="flex justify-center py-10">
-                    <img src="https://i.ibb.co.com/Dw4JGVH/Frame-2087325590.png" alt="" className="w-full" />
+                    <img src="https://i.ibb.co.com/Dw4JGVH/Frame-2087325590.png" alt="" className="w-full border border-[#9538E2] rounded-xl" />
                     
                 </div>
             </div>

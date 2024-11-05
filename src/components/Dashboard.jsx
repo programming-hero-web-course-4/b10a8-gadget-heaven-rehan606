@@ -14,6 +14,10 @@ const Dashboard = () => {
     const showCartContent = ()=> {
         navigate('/dashboard/cart')
     }
+
+    const showWishContent = () => {
+        navigate('/dashboard/wishlist')
+    }
     
 
     return (
@@ -26,12 +30,13 @@ const Dashboard = () => {
                     <div role="tablist" className=" flex justify-center
                  tabs tabs-boxed  bg-transparent mt-10 gap-5 ">
                         <a onClick={showCartContent} role="tab" className="tab !rounded-full w-40 bg-white font-bold">Cart</a>
-                        <a role="tab" className="tab !rounded-full w-40 border border-white font-bold">Wish List</a>
+                        <a onClick={showWishContent} role="tab" className="tab !rounded-full w-40 border border-white font-bold">Wish List</a>
                     </div>
                 </div>
 
             </div>
-            {/* <Outlet></Outlet> */}
+            
+            
             {location.pathname === '/dashboard' ? <CartContent></CartContent> : <Outlet />}
             
 

@@ -16,7 +16,7 @@ const addCart = gadget => {
   
     const addToCart = getAddedToCart()
     const isExist = addToCart.find(item => item.id == gadget.id)
-    if(isExist) return toast.error('This item already Exist!');
+    if(isExist) return toast.error('This item already Exist! in Cart');
 
     addToCart.push(gadget)
     localStorage.setItem('addToCart', JSON.stringify(addToCart) )
@@ -30,4 +30,31 @@ const removeItem = id => {
     toast.success('Successfully! Remove Item  ');
 }
 
-export {addCart , getAddedToCart, removeItem}
+//---------------------------Wishlist-----------------------------------
+
+// Get all wishlist 
+const getWishlist = () => {
+    const all = localStorage.getItem('wishlist')
+
+    if(all){
+        const wishList = JSON.parse(all)
+        return wishList
+    }else{
+        return []
+    }
+}
+
+
+// Add wishlist 
+const addWishlist = gadget =>{
+
+    const wishList = getWishlist()
+    const isExist = wishList.find(item => item.id == gadget.id)
+    if(isExist) return toast.error('This item already Exist! in Wishlist');
+
+    wishList.push(gadget)
+    localStorage.setItem('wishlist', JSON.stringify(wishList))
+    toast.success('Item Successfully! Added in Wishlist');
+}
+
+export {addCart , getAddedToCart, removeItem, addWishlist, getWishlist}

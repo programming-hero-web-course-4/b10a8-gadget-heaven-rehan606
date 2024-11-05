@@ -14,6 +14,7 @@ import Dashboard from './components/Dashboard.jsx';
 import CartContent from './components/CartContent.jsx';
 import Statistics from './components/Statistics.jsx';
 import TrackOrder from './components/TrackOrder.jsx';
+import WishContent from './components/WishContent.jsx';
 
 const router = createBrowserRouter([
   {
@@ -56,6 +57,10 @@ const router = createBrowserRouter([
           {
             path: 'cart',
             element: <CartContent></CartContent> ,
+          },
+          {
+            path: 'wishlist',
+            element: <WishContent></WishContent>,
           }
         ]
       },
@@ -66,7 +71,11 @@ const router = createBrowserRouter([
       {
         path: '/track',
         element: <TrackOrder></TrackOrder>,
-      }
+      },
+      // {
+      //   path: '/wishlist',
+      //   element: <WishContent></WishContent>,
+      // }
     ]
   },
 ]);
