@@ -1,7 +1,7 @@
 /* eslint-disable no-undef */
 import { useEffect, useState } from "react";
 import { getAddedToCart, removeItem } from "../utility";
-import Card from "./Card";
+
 import CartItem from "./CartItem";
 
 const CartContent = () => {

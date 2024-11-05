@@ -12,6 +12,7 @@ import CartList from './components/CartList.jsx';
 import Contact from './components/Contact.jsx';
 import Dashboard from './components/Dashboard.jsx';
 import CartContent from './components/CartContent.jsx';
+import Statistics from './components/Statistics.jsx';
 
 const router = createBrowserRouter([
   {
@@ -54,8 +55,8 @@ const router = createBrowserRouter([
         ]
       },
       {
-        path: '/contact',
-        element: <Contact></Contact>,
+        path: '/statistics',
+        element: <Statistics></Statistics>
       }
     ]
   },

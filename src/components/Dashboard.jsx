@@ -4,7 +4,7 @@
 // import Card from "./Card";
 // import CartItem from "./CartItem";
 
-import { Link, Outlet, useNavigate } from "react-router-dom";
+import { Outlet, useNavigate } from "react-router-dom";
 
 
 const Dashboard = () => {

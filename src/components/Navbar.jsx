@@ -5,32 +5,40 @@ import { NavLink, useLocation } from "react-router-dom";
 const Navbar = () => {
     const location = useLocation()
     
+    // Dashboard 
     const sectionBackgroundClass =
         location.pathname === "/dashboard" ? "bg-white pt-5 pb-2" : "transfarent";
 
+    const textColorClass =
+        location.pathname === "/dashboard" ? "textColor font-bold" : "text-white";
+
+    // Dashboard/cart 
     const sectionBackground =
         location.pathname === "/dashboard/cart" ? "bg-white pt-5 pb-2" : "transfarent";
-
-    const textColorClass =
-
-        location.pathname === "/dashboard" ? "textColor font-bold" : "text-white";
 
     const textColors =
         location.pathname === "/dashboard/cart" ? "textColor font-bold" : "text-white";
     
+    // Statistics 
+    const stastisticBg =
+        location.pathname === "/statistics" ? "bg-white pt-5 pb-2" : "transfarent";
+
+    const stastisticText =
+        location.pathname === "/statistics" ? "textColor font-bold" : "text-white";
+    
 
     const links = <>
-        <li><NavLink className={`${textColorClass} ${textColors}`} to="/">Home</NavLink></li>
-        <li><NavLink className={`${textColorClass} ${textColors}`} to="/statistic">Statistic</NavLink></li>
-        <li><NavLink className={`${textColorClass} ${textColors}`} to="/dashboard">Dashboard</NavLink></li>
-        <li><NavLink className={`${textColorClass} ${textColors}`} to="/contact">About</NavLink></li>
+        <li><NavLink className={`${textColorClass} ${textColors} ${stastisticText}`} to="/">Home</NavLink></li>
+        <li><NavLink className={`${textColorClass} ${textColors} ${stastisticText}`} to="/statistics">Statistics</NavLink></li>
+        <li><NavLink className={`${textColorClass} ${textColors} ${stastisticText}`} to="/dashboard">Dashboard</NavLink></li>
+        <li><NavLink className={`${textColorClass} ${textColors} ${stastisticText}`} to="/contact">About</NavLink></li>
 
     </>
 
     
     
     return (
-        <div className={`pt-10 ${sectionBackgroundClass} ${sectionBackground}` }>
+        <div className={`pt-10 ${sectionBackgroundClass} ${sectionBackground} ${stastisticBg}` }>
             <div className="navbar  mx-auto w-11/12 text-white px-10 ">
                 <div className="navbar-start">
                     <div className="dropdown">
@@ -56,7 +64,7 @@ const Navbar = () => {
                             {links}
                         </ul>
                     </div>
-                    <NavLink to='/' className={`text-lg md:text-xl cursor-pointer font-semibold ${textColorClass} ${textColors}`}>Gadget Heaven</NavLink>
+                    <NavLink to='/' className={`text-lg md:text-xl cursor-pointer font-semibold ${textColorClass} ${textColors} ${stastisticText}`}>Gadget Heaven</NavLink>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
