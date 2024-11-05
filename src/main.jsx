@@ -11,6 +11,7 @@ import GadgetDetails from './components/GadgetDetails.jsx';
 import CartList from './components/CartList.jsx';
 import Contact from './components/Contact.jsx';
 import Dashboard from './components/Dashboard.jsx';
+import CartContent from './components/CartContent.jsx';
 
 const router = createBrowserRouter([
   {
@@ -44,11 +45,17 @@ const router = createBrowserRouter([
       
       {
         path: '/dashboard',
-        element: <Dashboard></Dashboard>
+        element: <Dashboard></Dashboard>,
+        children:[
+          {
+            path: 'cart',
+            element: <CartContent></CartContent> ,
+          }
+        ]
       },
       {
         path: '/contact',
-        element: <Contact></Contact>
+        element: <Contact></Contact>,
       }
     ]
   },
