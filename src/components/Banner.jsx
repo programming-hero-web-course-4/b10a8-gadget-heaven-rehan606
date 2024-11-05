@@ -2,9 +2,9 @@
 
 const Banner = () => {
     return (
-        <div className="mb-20 px-7">
+        <div className="mb-20 ">
             <div className="bg-[#9538E2] -mt-20 rounded-2xl">
-                <div className=" container text-white pt-32 pb-44 ">
+                <div className=" container mx-auto text-white pt-32 pb-44 ">
                     <div className="hero-content text-center">
                         <div className="w-3/4 px-5">
                             <h1 className="text-5xl font-bold leading-tight">Upgrade Your Tech Accessorize with Gadget Heaven Accessories</h1>

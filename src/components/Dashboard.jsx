@@ -5,6 +5,7 @@
 // import CartItem from "./CartItem";
 
 import { Outlet, useNavigate } from "react-router-dom";
+import CartContent from "./CartContent";
 
 
 const Dashboard = () => {
@@ -30,7 +31,8 @@ const Dashboard = () => {
                 </div>
 
             </div>
-            <Outlet></Outlet>
+            {/* <Outlet></Outlet> */}
+            {location.pathname === '/dashboard' ? <CartContent></CartContent> : <Outlet />}
             
 
             

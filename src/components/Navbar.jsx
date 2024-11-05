@@ -46,7 +46,7 @@ const Navbar = () => {
     
     return (
         <div className={`pt-10 ${sectionBackgroundClass} ${sectionBackground} ${stastisticBg} ${trackBg}` }>
-            <div className="navbar  mx-auto w-11/12 text-white px-10 ">
+            <div className="container navbar  mx-auto w-11/12 text-white px-10 ">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -84,12 +84,12 @@ const Navbar = () => {
 
                     <button className=" flex">
                         <i className="fa-solid fa-cart-shopping border border-[#9538E2] bg-white rounded-full p-4 text-black"></i> 
-                        <span className="text-white font-semibold bg-black w-6 h-6 rounded-full -ml-4">4</span>
+                        <span className="text-white font-semibold border border-[#9538E2] textColor bg-white w-6 h-6 rounded-full -ml-4">0</span>
                     </button>
 
                     <button className="ml-4 flex">
                         <i className="fa-regular fa-heart border border-[#9538E2] bg-white rounded-full p-4 text-black"></i>
-                        <span className="text-white font-semibold bg-black w-6 h-6 rounded-full -ml-4">2</span>
+                        <span className="text-white font-semibold border border-[#9538E2] textColor bg-white w-6 h-6 rounded-full -ml-4">0</span>
                     </button>
                 </div>
             </div>

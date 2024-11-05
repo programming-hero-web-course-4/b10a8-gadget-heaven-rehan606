@@ -50,6 +50,10 @@ const router = createBrowserRouter([
         element: <Dashboard></Dashboard>,
         children:[
           {
+            index: true, 
+            element: <CartContent></CartContent>,
+          },
+          {
             path: 'cart',
             element: <CartContent></CartContent> ,
           }

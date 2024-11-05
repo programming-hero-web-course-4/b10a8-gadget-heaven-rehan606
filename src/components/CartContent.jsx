@@ -42,7 +42,7 @@ const CartContent = () => {
             <div className="px-24">
                 <div className="container mx-auto flex justify-between items-center mt-5">
                     <div>
-                        <h2 className="font-semibold">Cart</h2>
+                        <h2 className="font-bold text-xl">Cart</h2>
                     </div>
 
                     <div className="flex items-center gap-3">

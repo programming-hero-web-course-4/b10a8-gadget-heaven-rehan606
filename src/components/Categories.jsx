@@ -4,9 +4,10 @@ import {  NavLink } from "react-router-dom";
 
 const Categories = ({categories}) => {
     return (
-        <div className="container w-8/12 mx-auto  mb-20">
+        <div className="container w-12/12 mx-auto  mb-20">
             
-            <div role="tablist" className="tabs tabs-boxed border border-gray-300 bg-white p-5 rounded-xl space-y-3 flex flex-col  items-start w-[250px]">
+            <div role="tablist" className="items-start ml-20
+             tabs tabs-boxed border border-gray-300 bg-white p-5 rounded-xl space-y-3 flex flex-col  w-[250px]">
                 
                 {
 
