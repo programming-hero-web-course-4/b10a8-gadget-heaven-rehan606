@@ -11,7 +11,7 @@ const Banner = () => {
                             <p className="py-6 px-20">
                                 Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!.
                             </p>
-                            <button className="rounded-full px-10 py-4 bg-gray-200 font-bold textColor">Shop Now</button>
+                            <button className="rounded-full px-10 py-4 bg-white font-bold textColor">Shop Now</button>
                         </div>
                     </div>
 

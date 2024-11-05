@@ -3,21 +3,27 @@ import { useEffect, useState } from "react";
 import { getAddedToCart, removeItem } from "../utility";
 
 import CartItem from "./CartItem";
+import { useNavigate } from "react-router-dom";
 
 const CartContent = () => {
 
 
     const [gadget, setGadget] = useState([])
     const [totalCost, setTotalCost] = useState(0);
+    // Modal 
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    // Modal close and redirect to Home
+    const navigate = useNavigate()
 
-    useEffect(()=> {
+    useEffect(() => {
         const cartData = getAddedToCart()
         setGadget(cartData)
         updateTotalCost(cartData);
 
-    },[])
+    }, [])
 
-    const handleRemove = id =>{
+    // Remove item from cart
+    const handleRemove = id => {
         removeItem(id)
         const cartData = getAddedToCart()
         setGadget(cartData)
@@ -32,10 +38,27 @@ const CartContent = () => {
 
     // Sort items by price
     const sortByPrice = () => {
-        const sortedGadgets = [...gadget].sort((a, b) => b.price - a.price );
+        const sortedGadgets = [...gadget].sort((a, b) => b.price - a.price);
         setGadget(sortedGadgets);
     };
 
+    // Purchase Button handler for modal
+    const handlePurchase = () => {
+        setIsModalOpen(true);
+        setGadget([]); 
+        setTotalCost(0); 
+    };
+
+    // Close Modal
+    const closeModal = () => {
+        setIsModalOpen(false);
+        navigate('/')
+    };
+
+    
+    // const redirectHome = ()=> {
+        
+    // }
 
     return (
         <div>
@@ -49,18 +72,49 @@ const CartContent = () => {
                         <h2 className="font-semibold">Total Cost : {totalCost} </h2>
                         <button onClick={sortByPrice} className="px-5 py-2 rounded-full border textColor font-semibold border-[#9538E2]">Sort by Price <i className="fa-solid fa-arrow-up-a-z"></i> </button>
 
-                        <button className="px-5 py-2 rounded-full border font-semibold text-white bg-[#9538E2]">Purchase</button>
+                        <button onClick={handlePurchase} className="px-5 py-2 rounded-full border font-semibold text-white bg-[#9538E2]">Purchase</button>
                     </div>
                 </div>
 
             </div>
 
-
+            {/* 
             <div className="container mx-auto gap-4">
                 {
                     gadget.map(gadget => ( <CartItem handleRemove={handleRemove} key={gadget.id} gadget={gadget}></CartItem> ))
                 }
+            </div> */}
+
+            <div className="container mx-auto gap-4 pb-20">
+                {gadget.length > 0 ? (
+                    gadget.map(gadget => (
+                        <CartItem handleRemove={handleRemove} key={gadget.id} gadget={gadget}></CartItem>
+                    ))
+                ) : (
+                    <p className="text-center mt-5 font-bold">Your cart is empty.</p>
+                )}
             </div>
+
+            {/* Modal  */}
+            {isModalOpen && (
+                <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
+                    <div className="bg-white p-6 rounded-lg text-center w-96">
+                        <div className="flex justify-center">
+                            <img src="https://i.ibb.co.com/TPwGzZN/Group.png" alt="" />
+                        </div>
+                        <h2 className="text-3xl font-bold mb-4">Payment Successfully!</h2>
+                        <hr />
+                        <p className="mt-4">Your purchase was successful!</p>
+                        <p> <span className="text-green-400 font-bold">Thanks</span> for Your purchasing</p>
+                        <button onClick={closeModal} className="mt-5 px-4 py-2 bg-[#9538E2] text-white font-semibold rounded-full">
+                            Close
+                        </button>
+                    </div>
+                </div>
+            )}
+
+
+
         </div>
     );
 };

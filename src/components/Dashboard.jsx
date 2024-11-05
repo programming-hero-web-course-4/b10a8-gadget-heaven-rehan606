@@ -4,18 +4,25 @@
 // import Card from "./Card";
 // import CartItem from "./CartItem";
 
-import { Outlet, useNavigate } from "react-router-dom";
+import { Outlet, useLocation, useNavigate } from "react-router-dom";
 import CartContent from "./CartContent";
+import { useState } from "react";
 
 
 const Dashboard = () => {
 
     const navigate = useNavigate();
+    const location = useLocation()
+
+    const [activeTab, setActiveTab] = useState("cart");
+
     const showCartContent = ()=> {
+        setActiveTab("cart")
         navigate('/dashboard/cart')
     }
 
     const showWishContent = () => {
+        setActiveTab("wishlist")
         navigate('/dashboard/wishlist')
     }
     
@@ -29,8 +36,9 @@ const Dashboard = () => {
                 <div className="container mx-auto">
                     <div role="tablist" className=" flex justify-center
                  tabs tabs-boxed  bg-transparent mt-10 gap-5 ">
-                        <a onClick={showCartContent} role="tab" className="tab !rounded-full w-40 bg-white font-bold">Cart</a>
-                        <a onClick={showWishContent} role="tab" className="tab !rounded-full w-40 border border-white font-bold">Wish List</a>
+                        <a onClick={showCartContent} role="tab" className={`tab !rounded-full w-40 font-bold ${activeTab === "cart" ? "bg-white text-black" : "border text-white"}`}>Cart</a>
+                        
+                        <a onClick={showWishContent} role="tab" className={`tab !rounded-full w-40 font-bold ${activeTab === "wishlist" ? "bg-white text-black" : "border text-white"}`}>Wish List</a>
                     </div>
                 </div>
 
