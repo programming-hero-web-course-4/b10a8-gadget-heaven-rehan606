@@ -19,5 +19,8 @@
     },
     { 
         "id": 7, "category": "iPhone" 
+    },
+    { 
+        "id": 8, "category": "Desktop" 
     }
 ]
