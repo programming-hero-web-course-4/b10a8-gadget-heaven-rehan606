@@ -13,6 +13,7 @@ import Contact from './components/Contact.jsx';
 import Dashboard from './components/Dashboard.jsx';
 import CartContent from './components/CartContent.jsx';
 import Statistics from './components/Statistics.jsx';
+import TrackOrder from './components/TrackOrder.jsx';
 
 const router = createBrowserRouter([
   {
@@ -57,6 +58,10 @@ const router = createBrowserRouter([
       {
         path: '/statistics',
         element: <Statistics></Statistics>
+      },
+      {
+        path: '/track',
+        element: <TrackOrder></TrackOrder>,
       }
     ]
   },

@@ -25,20 +25,27 @@ const Navbar = () => {
 
     const stastisticText =
         location.pathname === "/statistics" ? "textColor font-bold" : "text-white";
+
+    // Statistics 
+    const trackBg =
+        location.pathname === "/track" ? "bg-white pt-5 pb-2" : "transfarent";
+
+    const trackText =
+        location.pathname === "/track" ? "textColor font-bold" : "text-white";
     
 
     const links = <>
-        <li><NavLink className={`${textColorClass} ${textColors} ${stastisticText}`} to="/">Home</NavLink></li>
-        <li><NavLink className={`${textColorClass} ${textColors} ${stastisticText}`} to="/statistics">Statistics</NavLink></li>
-        <li><NavLink className={`${textColorClass} ${textColors} ${stastisticText}`} to="/dashboard">Dashboard</NavLink></li>
-        <li><NavLink className={`${textColorClass} ${textColors} ${stastisticText}`} to="/contact">About</NavLink></li>
+        <li><NavLink className={`${textColorClass} ${textColors} ${stastisticText} ${trackText}`} to="/">Home</NavLink></li>
+        <li><NavLink className={`${textColorClass} ${textColors} ${stastisticText} ${trackText}`} to="/statistics">Statistics</NavLink></li>
+        <li><NavLink className={`${textColorClass} ${textColors} ${stastisticText} ${trackText}`} to="/dashboard">Dashboard</NavLink></li>
+        <li><NavLink className={`${textColorClass} ${textColors} ${stastisticText} ${trackText}`} to="/track">Track Order</NavLink></li>
 
     </>
 
     
     
     return (
-        <div className={`pt-10 ${sectionBackgroundClass} ${sectionBackground} ${stastisticBg}` }>
+        <div className={`pt-10 ${sectionBackgroundClass} ${sectionBackground} ${stastisticBg} ${trackBg}` }>
             <div className="navbar  mx-auto w-11/12 text-white px-10 ">
                 <div className="navbar-start">
                     <div className="dropdown">
@@ -64,7 +71,7 @@ const Navbar = () => {
                             {links}
                         </ul>
                     </div>
-                    <NavLink to='/' className={`text-lg md:text-xl cursor-pointer font-semibold ${textColorClass} ${textColors} ${stastisticText}`}>Gadget Heaven</NavLink>
+                    <NavLink to='/' className={`text-lg md:text-xl cursor-pointer font-semibold ${textColorClass} ${textColors} ${stastisticText} ${trackText}`}>Gadget Heaven</NavLink>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
