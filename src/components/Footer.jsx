@@ -5,8 +5,8 @@ const Footer = () => {
         <div className="bg-white">
             <div className="container mx-auto py-10">
                 <div className="text-center mb-10">
-                    <h2 className="text-3xl font-bold mb-3 ">Gadget Heaven</h2>
-                    <p className="font-semibold text-gray-500">Leading the way in cutting-edge technology and ennovation</p>
+                    <h2 className="textColor text-3xl font-bold mb-3 ">Gadget Heaven</h2>
+                    <p className=" text-gray-500">Leading the way in cutting-edge technology and ennovation</p>
                 </div>
                 <hr />
                 <footer className="footer w-2/4 mx-auto mt-10">

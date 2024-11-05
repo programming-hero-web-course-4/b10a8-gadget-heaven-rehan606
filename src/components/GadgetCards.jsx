@@ -11,7 +11,7 @@ const GadgetCards = () => {
 
     useEffect(() => {
         if (category === "All" || !category) {
-            setGadget(data.slice(0, 9));
+            setGadget(data.slice(0, 12));
         } else {
             const filterByCategory = [...data].filter(gadget => gadget.category === category);
             setGadget(filterByCategory);

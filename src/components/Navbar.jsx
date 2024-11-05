@@ -40,13 +40,16 @@ const Navbar = () => {
     const wishText =
         location.pathname === "/dashboard/wishlist" ? "textColor font-bold" : "text-white";
     
+    // Gadget Details 
+    
+    
 
     const links = <>
         <li><NavLink className={`${textColorClass} ${textColors} ${stastisticText} ${trackText} ${wishText}`} to="/">Home</NavLink></li>
         <li><NavLink className={`${textColorClass} ${textColors} ${stastisticText} ${trackText} ${wishText}`} to="/statistics">Statistics</NavLink></li>
         <li><NavLink className={`${textColorClass} ${textColors} ${stastisticText} ${trackText} ${wishText}`} to="/dashboard">Dashboard</NavLink></li>
         <li><NavLink className={`${textColorClass} ${textColors} ${stastisticText} ${trackText} ${wishText}`} to="/track">Track Order</NavLink></li>
-        {/* <li><NavLink className={`${textColorClass} ${textColors} ${stastisticText} ${trackText}`} to="/wishlist">Wishlist</NavLink></li> */}
+        
 
     </>
 
