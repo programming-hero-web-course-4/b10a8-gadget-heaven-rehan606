@@ -94,7 +94,7 @@ Using **Local Storage** for handling and managing data in a project is a great w
 <h2 align="center"> Project Layout</h2>
 
 ### Home Page:
-<img src="https://i.ibb.co.com/fN8LY7V/HomePage.png" alt="HomePage" border="0">
+<img src="https://i.ibb.co.com/fN8LY7V/HomePage.png" alt="HomePage" border="0" >
 
 
 ### Dashboard:
@@ -108,7 +108,7 @@ Using **Local Storage** for handling and managing data in a project is a great w
 
 
 
-### -------------------------------------Thank you so much Visiting My Repository-------------------------------
+ ------------------------------Thank you so much Visiting My Repository----------------------------
 
 
 
