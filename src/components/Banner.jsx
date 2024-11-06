@@ -1,6 +1,12 @@
+import { useNavigate } from "react-router-dom";
 
 
 const Banner = () => {
+
+    const navigate = useNavigate()
+    const goToDashboard =() =>{
+        navigate('/dashboard')
+    }
     return (
         <div className="mb-20 ">
             <div className="bg-[#9538E2] -mt-20 rounded-2xl">
@@ -11,7 +17,7 @@ const Banner = () => {
                             <p className="py-6 px-20">
                                 Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!.
                             </p>
-                            <button className="rounded-full px-10 py-4 bg-white font-bold textColor">Shop Now</button>
+                            <button onClick={goToDashboard} className="rounded-full px-10 py-4 bg-white font-bold textColor">Shop Now</button>
                         </div>
                     </div>
 
