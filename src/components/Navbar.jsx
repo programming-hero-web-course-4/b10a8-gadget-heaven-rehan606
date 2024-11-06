@@ -4,7 +4,7 @@ import { NavLink, useLocation } from "react-router-dom";
 
 const Navbar = () => {
     const location = useLocation()
-    
+
     // Dashboard 
     const sectionBackgroundClass =
         location.pathname === "/dashboard" ? "bg-white pt-5 pb-2" : "transfarent";
@@ -18,7 +18,7 @@ const Navbar = () => {
 
     const textColors =
         location.pathname === "/dashboard/cart" ? "textColor font-bold" : "text-white";
-    
+
     // Statistics 
     const stastisticBg =
         location.pathname === "/statistics" ? "bg-white pt-5 pb-2" : "transfarent";
@@ -32,31 +32,31 @@ const Navbar = () => {
 
     const trackText =
         location.pathname === "/track" ? "textColor font-bold" : "text-white";
-    
-    // Track Order 
+
+    // Wish List
     const wishBg =
         location.pathname === "/dashboard/wishlist" ? "bg-white pt-5 pb-2" : "transfarent";
 
     const wishText =
         location.pathname === "/dashboard/wishlist" ? "textColor font-bold" : "text-white";
-    
+
     // Gadget Details 
-    
-    
+
+
 
     const links = <>
         <li><NavLink className={`${textColorClass} ${textColors} ${stastisticText} ${trackText} ${wishText}`} to="/">Home</NavLink></li>
         <li><NavLink className={`${textColorClass} ${textColors} ${stastisticText} ${trackText} ${wishText}`} to="/statistics">Statistics</NavLink></li>
         <li><NavLink className={`${textColorClass} ${textColors} ${stastisticText} ${trackText} ${wishText}`} to="/dashboard">Dashboard</NavLink></li>
         <li><NavLink className={`${textColorClass} ${textColors} ${stastisticText} ${trackText} ${wishText}`} to="/track">Track Order</NavLink></li>
-        
+
 
     </>
 
-    
-    
+
+
     return (
-        <div className={`pt-10   ${sectionBackgroundClass} ${sectionBackground} ${stastisticBg} ${trackBg}` }>
+        <div className={`pt-10   ${sectionBackgroundClass} ${sectionBackground} ${stastisticBg} ${trackBg} ${wishBg}`}>
             <div className="container navbar  mx-auto w-11/12 text-white px-10 ">
                 <div className="navbar-start">
                     <div className="dropdown">
@@ -94,7 +94,7 @@ const Navbar = () => {
                 <div className="navbar-end">
 
                     <button className=" flex">
-                        <i className="fa-solid fa-cart-shopping border border-[#9538E2] bg-white rounded-full p-4 text-black"></i> 
+                        <i className="fa-solid fa-cart-shopping border border-[#9538E2] bg-white rounded-full p-4 text-black"></i>
                         <span className="text-white font-semibold border border-[#9538E2] textColor bg-white w-6 h-6 rounded-full -ml-4">0</span>
                     </button>
 

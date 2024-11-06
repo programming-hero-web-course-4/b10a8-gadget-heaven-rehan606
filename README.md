@@ -83,6 +83,31 @@ Using **Local Storage** for handling and managing data in a project is a great w
 
 
 
+## Technology Used:
+- React js
+- React Router
+- Local Storage
+- Tailwind Css
+
+
+
+<h2 align="center"> Project Layout</h2>
+
+### Home Page:
+<img src="https://i.ibb.co.com/fN8LY7V/HomePage.png" alt="HomePage" border="0">
+
+
+### Dashboard:
+<img src="https://i.ibb.co.com/yyTFDQy/Dashboard.png" alt="Dashboard" border="0">
+
+
+### Details Page:
+<img src="https://i.ibb.co.com/Xt7JLgF/Details-Page.png" alt="Details-Page" border="0">
+
+
+
+
+
 ### -------------------------------------Thank you so much Visiting My Repository-------------------------------
 
 
