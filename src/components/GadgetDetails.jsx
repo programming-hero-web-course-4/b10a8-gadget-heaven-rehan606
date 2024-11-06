@@ -46,17 +46,17 @@ const GadgetDetails = () => {
         <div className="" >
             <div className=" bg-[#9538E2] pb-52 text-center pt-10">
                 <h2 className="text-3xl font-bold text-white ">Product Details</h2>
-                <p className=" text-white mt-5 px-72">explore the latest gadgets that will take your experience to the next level. from smart device to coolest accessories , we have it all.</p>
+                <p className=" text-white mt-5 px-10 md:px-36 lg:px-72">explore the latest gadgets that will take your experience to the next level. from smart device to coolest accessories , we have it all.</p>
             </div>
 
             <div className="container w-11/12 mx-auto px-4 mb-20 -mt-40">
 
-                <div className="flex gap-7 border rounded-3xl bg-white p-7 items-center">
-                    <div className="w-5/12 p-10 border rounded-2xl bg-gray-200">
-                        <img src={image} alt="" className="rounded-xl h-96" />
+                <div className="flex flex-col md:flex-row gap-7 border rounded-3xl bg-white p-7 items-center">
+                    <div className="w-full lg:w-5/12 md:p-3 lg:p-10 border rounded-2xl bg-gray-200">
+                        <img src={image} alt="" className="rounded-xl md:h-96" />
                     </div>
 
-                    <div className="w-7/12 ">
+                    <div className=" w-full lg:w-7/12 ">
                         <h2 className="text-2xl font-bold textColor">{title}</h2>
                         <p className="font-bold text-gray-500 mb-4 mt-4">Price : {price} </p>
                         <div className="mt-4 mb-4">

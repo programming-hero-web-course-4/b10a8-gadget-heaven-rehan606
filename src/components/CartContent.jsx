@@ -63,17 +63,17 @@ const CartContent = () => {
     return (
         <div>
             
-            <div className="px-16">
+            <div className=" px-6 md:px-16">
                 <div className="container mx-auto flex justify-between items-center mt-5">
                     <div>
                         <h2 className="font-bold text-xl">Cart</h2>
                     </div>
 
-                    <div className="flex items-center gap-3">
-                        <h2 className="font-semibold">Total Cost : {totalCost} </h2>
-                        <button onClick={sortByPrice} className="px-5 py-2 rounded-full border textColor font-semibold border-[#9538E2]">Sort by Price <i className="fa-solid fa-arrow-up-a-z"></i> </button>
+                    <div className="flex items-center gap-1 md:gap-3">
+                        <h2 className=" text-xs md:text-lg font-semibold">Total Cost : {totalCost} </h2>
+                        <button onClick={sortByPrice} className="text-xs md:text-lg px-2 md:px-5 py-2 rounded-full border textColor font-semibold border-[#9538E2]">Sort by Price <i className="fa-solid fa-arrow-up-a-z"></i> </button>
 
-                        <button onClick={handlePurchase} className="px-5 py-2 rounded-full border font-semibold text-white bg-[#9538E2]">Purchase</button>
+                        <button onClick={handlePurchase} className="text-xs md:text-lg px-2 md:px-5 py-2 rounded-full border font-semibold text-white bg-[#9538E2]">Purchase</button>
                     </div>
                 </div>
 
@@ -99,7 +99,7 @@ const CartContent = () => {
             {/* Modal  */}
             {isModalOpen && (
                 <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
-                    <div className="bg-white p-6 rounded-lg text-center w-96">
+                    <div className="bg-white p-6 rounded-lg text-center w-96 ">
                         <div className="flex justify-center">
                             <img src="https://i.ibb.co.com/TPwGzZN/Group.png" alt="" />
                         </div>

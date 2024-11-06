@@ -6,8 +6,8 @@ const Categories = ({categories}) => {
     return (
         <div className="container w-12/12 mx-auto  mb-20">
             
-            <div role="tablist" className="items-start ml-20
-             tabs tabs-boxed border border-gray-300 bg-white p-5 rounded-xl space-y-3 flex flex-col  w-[250px]">
+            <div role="tablist" className="lg:items-start mx-4 lg:mx-0 lg:ml-20
+             tabs tabs-boxed border border-gray-300 bg-white p-5 rounded-xl space-y-3 flex flex-wrap md:flex-nowrap lg:flex-col  lg:w-[250px]">
                 
                 {
                     categories.map(category=> (
