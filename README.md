@@ -94,15 +94,19 @@ Using **Local Storage** for handling and managing data in a project is a great w
 <h2 align="center"> Project Layout</h2>
 
 ### Home Page:
+
 <p align="center"><img src="https://i.ibb.co.com/fN8LY7V/HomePage.png" alt="HomePage"  > </p>
 
 
 
 ### Dashboard:
+
 <p align="center"> <img src="https://i.ibb.co.com/yyTFDQy/Dashboard.png" alt="Dashboard"></p>
 
 
+
 ### Details Page:
+
 <p align="center"><img src="https://i.ibb.co.com/Xt7JLgF/Details-Page.png" alt="Details-Page" > </p>
 
 
