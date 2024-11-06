@@ -56,7 +56,7 @@ const Navbar = () => {
     
     
     return (
-        <div className={`pt-10 ${sectionBackgroundClass} ${sectionBackground} ${stastisticBg} ${trackBg} ${wishBg}` }>
+        <div className={`pt-10   ${sectionBackgroundClass} ${sectionBackground} ${stastisticBg} ${trackBg}` }>
             <div className="container navbar  mx-auto w-11/12 text-white px-10 ">
                 <div className="navbar-start">
                     <div className="dropdown">
@@ -82,7 +82,7 @@ const Navbar = () => {
                             {links}
                         </ul>
                     </div>
-                    <NavLink to='/' className={`text-lg md:text-xl cursor-pointer font-semibold ${textColorClass} ${textColors} ${stastisticText} ${trackText} ${wishText}`}>Gadget Heaven</NavLink>
+                    <NavLink to='/' className={`text-lg md:text-xl  cursor-pointer font-semibold ${textColorClass} ${textColors} ${stastisticText} ${trackText} ${wishText} `}>Gadget Heaven</NavLink>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">

@@ -5,9 +5,10 @@
 <p align="center"> <a href="https://gadget-heaven-react-routes.netlify.app/">Click here to Visite Live Project</a> </p>
 
 
+
 ## GitHub Repository Link: 
 
-<a href="https://github.com/programming-hero-web-course-4/b10a8-gadget-heaven-rehan606">Click here to Visite GitHub Project Repository</a>
+<p align="center"> <a href="https://github.com/programming-hero-web-course-4/b10a8-gadget-heaven-rehan606">Click here to Visite GitHub Project Repository</a> </p>
 
 
 
@@ -55,6 +56,9 @@ This project demonstrates fundamental React concepts, providing a clean and inte
    This pattern allows passing a function as a prop to dynamically control component rendering.
 
 
+
+
+
 # handling and managing data:
 
 Using **Local Storage** for handling and managing data in a project is a great way to ensure data persists even after a user refreshes the page or closes the browser.
@@ -76,6 +80,10 @@ Using **Local Storage** for handling and managing data in a project is a great w
 
 ### 5. Sorting Options 
    - **Features**: Allow users to sort gadgets by price
+
+
+
+### -------------------------------------Thank you so much Visiting My Repository-------------------------------
 
 
 
